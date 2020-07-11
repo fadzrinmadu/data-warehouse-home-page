@@ -1,0 +1,24 @@
+/* Header */
+.header {
+  .btn-secondary {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    margin-top: 50px;
+
+    .navbar-nav {
+      margin-left: 121px;
+    }
+
+    .nav-item {
+      margin-right: 40px;
+    }
+
+    .btn-secondary {
+      margin-top: 0;
+    }
+  }
+}

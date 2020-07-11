@@ -1,0 +1,121 @@
+body {
+  color: $majestic-blue;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h1,
+h2 {
+  color: $majestic-blue-dark;
+  font-family: $secondary-font;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+h5,
+p {
+  font-size: 1.125em;
+}
+
+.nav-item.active .nav-link {
+  color: $majestic-blue-dark;
+}
+
+.btn-secondary {
+  color: $majestic-blue;
+}
+
+.nav-item.active .nav-link,
+.btn {
+  font-weight: 700;
+}
+
+.feature p {
+  font-size: 1em;
+}
+
+.testimonial .job {
+  font-size: 0.875em;
+}
+
+.testimonial .card-text {
+  font-weight: 500;
+}
+
+.footer h5,
+.footer address,
+.footer .nav-link {
+  font-size: 0.875em;
+}
+
+.footer small {
+  font-size: 0.75em;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.625em;
+  }
+}
+
+/* Avenir font-face */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff'),
+       url('../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/AvenirLTStd-Roman_1.woff'),
+       url('../fonts/avenir/AvenirLTStd-Roman_1.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff'),
+       url('../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff'),
+       url('../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff2');
+  font-weight: 700;
+}
+
+/* Helvetica font-face */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica/helvetica-webfont.woff'),
+       url('../fonts/helvetica/helvetica-webfont.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica/helvetica-bold-webfont.woff'),
+       url('../fonts/helvetica/helvetica-bold-webfont.woff2');
+  font-weight: 700;
+}
