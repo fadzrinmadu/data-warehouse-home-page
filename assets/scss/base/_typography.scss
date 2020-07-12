@@ -11,10 +11,6 @@ body {
 
 h1 {
   font-size: 5em;
-
-  @media screen and (max-width: 992px) {
-    font-size: 2.625em;
-  }
 }
 
 h2 {
@@ -26,6 +22,9 @@ h2 {
   color: $majestic-blue-dark;
   font-family: $secondary-font;
   font-weight: 700;
+  @media screen and (max-width: 992px) {
+    font-size: 2.625em;
+  }
 }
 
 h3 {
@@ -41,6 +40,11 @@ h5 {
 h5,
 p {
   font-size: 1.125em;
+}
+
+p {
+  color: $majestic-blue;
+  line-height: 160%;
 }
 
 .nav-item.active .nav-link {

@@ -1,0 +1,16 @@
+.about {
+  margin-top: 100px;
+
+  .container {
+    background: hsla(324, 82%, 66%, 15%);
+    padding: 30px 12px;
+    border-radius: 50px;
+    overflow-x: hidden;
+  }
+
+  @media screen and (min-width: 992px) {
+    .content {
+      padding-right: 90px;
+    }
+  }
+}

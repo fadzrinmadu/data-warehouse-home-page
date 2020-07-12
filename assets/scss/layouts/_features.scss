@@ -1,0 +1,49 @@
+.features {
+  margin-top: 150px;
+
+  .title p {
+    margin-top: 30px;
+  }
+
+  .row:nth-child(2) {
+    margin-top: 70px;
+  }
+
+  .feature {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .title p {
+      width: 584px;
+      margin: 50px auto;
+    }
+
+    .feature {
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: contain;
+
+      &:nth-child(1) {
+        background-image: url(../img/bg-search-data.svg);
+      }
+
+      &:nth-child(2) {
+        background-image: url(../img/bg-24-hours-access.svg);
+      }
+
+      &:nth-child(3) {
+        background-image: url(../img/bg-print-out.svg);
+      }
+
+      &:nth-child(4) {
+        background-image: url(../img/bg-security-code.svg);
+      }
+    }
+
+    .btn {
+      padding-left: 0;
+    }
+  }
+}

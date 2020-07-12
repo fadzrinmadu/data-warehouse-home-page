@@ -17,10 +17,21 @@
   background: $purple;
   border: none;
   color: $white;
+
+  &:hover {
+    background: hsl(265, 68%, 65%, 90%);
+  }
 }
 
 .btn-secondary {
   background: $white;
   border: none;
   box-shadow: 0 5px 5px hsla(202, 16, 35, 10%);
+  transition: .4s;
+
+  &:hover {
+    background: $white;
+    box-shadow: none;
+    color: $majestic-blue-dark;
+  }
 }
