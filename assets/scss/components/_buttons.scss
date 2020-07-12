@@ -1,6 +1,11 @@
 .btn {
   padding: 0.625em 1.8125em;
   border-radius: 50px;
+
+  @media screen and (min-width: 992px) {
+    padding: 1.0625em 1.8125em;
+    border-radius: 50px;
+  }
 }
 
 .btn img {
@@ -8,15 +13,14 @@
   margin-left: 20px;
 }
 
+.btn-primary {
+  background: $purple;
+  border: none;
+  color: $white;
+}
+
 .btn-secondary {
   background: $white;
   border: none;
   box-shadow: 0 5px 5px hsla(202, 16, 35, 10%);
-}
-
-@media screen and (min-width: 992px) {
-  .btn {
-    padding: 1.0625em 1.8125em;
-    border-radius: 50px;
-  }
 }

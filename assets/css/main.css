@@ -8,7 +8,7 @@
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
-  --purple: #6f42c1;
+  --purple: #9c69e2;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
@@ -9933,9 +9933,19 @@ body {
   font-size: 16px;
   font-weight: 600;
 }
+@media screen and (max-width: 992px) {
+  body {
+    text-align: center;
+  }
+}
 
 h1 {
   font-size: 5em;
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.625em;
+  }
 }
 
 h2 {
@@ -9999,11 +10009,6 @@ p {
   font-size: 0.75em;
 }
 
-@media screen and (max-width: 992px) {
-  h1 {
-    font-size: 2.625em;
-  }
-}
 /* Avenir font-face */
 @font-face {
   font-family: "Avenir";
@@ -10056,12 +10061,59 @@ p {
   }
 }
 .intro {
-  margin-top: 130px;
+  margin-top: 80px;
+  overflow-x: hidden;
+}
+.intro h1 {
+  margin-top: 20px;
+}
+.intro p {
+  margin-top: 20px;
+}
+.intro img {
+  width: 100%;
+}
+.intro .intro-content {
+  position: relative;
+  z-index: 1;
+}
+.intro .btn-primary {
+  width: 100%;
+  margin-top: 30px;
 }
 
+@media screen and (min-width: 992px) {
+  .intro {
+    margin-top: 130px;
+    overflow-x: hidden;
+  }
+  .intro h1 {
+    margin-top: 0;
+  }
+  .intro p {
+    padding-right: 40%;
+    line-height: 160%;
+    margin: 50px auto;
+  }
+  .intro img {
+    width: auto;
+    margin-top: 96px;
+    margin-left: -344px;
+  }
+  .intro .btn-primary {
+    width: 170px;
+    margin-top: 0;
+  }
+}
 .btn {
   padding: 0.625em 1.8125em;
   border-radius: 50px;
+}
+@media screen and (min-width: 992px) {
+  .btn {
+    padding: 1.0625em 1.8125em;
+    border-radius: 50px;
+  }
 }
 
 .btn img {
@@ -10069,17 +10121,16 @@ p {
   margin-left: 20px;
 }
 
+.btn-primary {
+  background: #9c69e2;
+  border: none;
+  color: white;
+}
+
 .btn-secondary {
   background: white;
   border: none;
   box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
-}
-
-@media screen and (min-width: 992px) {
-  .btn {
-    padding: 1.0625em 1.8125em;
-    border-radius: 50px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

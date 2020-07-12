@@ -1,3 +1,54 @@
 .intro {
-  margin-top: 130px;
+  margin-top: 80px;
+  overflow-x: hidden;
+  
+  h1 {
+    margin-top: 20px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .intro-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-primary {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro {
+    margin-top: 130px;
+    overflow-x: hidden;
+    
+    h1 {
+      margin-top: 0;
+    }
+
+    p {
+      padding-right: 40%;
+      line-height: 160%;
+      margin: 50px auto;
+    }
+
+    img {
+      width: auto;
+      margin-top: 96px; 
+      margin-left: -344px;
+    }
+
+    .btn-primary {
+      width: 170px;
+      margin-top: 0;
+    }
+  }
 }
