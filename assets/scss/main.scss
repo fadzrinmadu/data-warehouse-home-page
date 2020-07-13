@@ -17,9 +17,13 @@
   'layouts/header',
   'layouts/intro',
   'layouts/about',
-  'layouts/features';
+  'layouts/features',
+  'layouts/testimonials',
+  'layouts/banner',
+  'layouts/footer';
 
 // 5. Components
 @import
-  'components/buttons';
+  'components/buttons',
+  'components/messenger';
 

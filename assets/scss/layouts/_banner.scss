@@ -1,0 +1,24 @@
+.banner {
+  margin-top: 150px;
+  border-top: 2px solid hsl(256, 67%, 93%);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    background: $pink;
+    &:hover {
+      background: hsl(324, 82%, 56%);
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .btn {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

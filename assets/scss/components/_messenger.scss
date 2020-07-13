@@ -1,0 +1,21 @@
+.messenger {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: hsl(240, 13%, 92%);
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 992px) {
+    bottom: 40px;
+    right: 40px;
+  }
+}

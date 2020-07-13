@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- Import owl.carousel.css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <!-- Import main.css -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -165,57 +167,45 @@
           </div>
           <div class="row">
             <div class="col">
-              <ul class="slider">
-                <li class="testimonial">
-                  <div class="card mb-3">
-                    <div class="row no-gutters">
-                      <div class="col-md-4">
-                        <img src="assets/img/users/john-fang.svg" class="card-img" alt="john fang">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">John Fang</h5>
-                          <p class="job">wordfaang.com</p>
-                          <p class="card-text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
-                        </div>
-                      </div>
+              <ul class="slider d-flex owl-carousel">
+                <li class="testimonial mb-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="assets/img/users/john-fang.svg" alt="john fang">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">John Fang</h5>
+                      <p class="job">wordfaang.com</p>
+                      <p class="card-text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
                     </div>
                   </div>
                 </li>
-                <li class="testimonial">
-                  <div class="card mb-3">
-                    <div class="row no-gutters">
-                      <div class="col-md-4">
-                        <img src="assets/img/users/jeny-doe.svg" class="card-img" alt="jeny doe">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Jeny Doe</h5>
-                          <p class="job">UX Engineer</p>
-                          <p class="card-text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
-                        </div>
-                      </div>
+                <li class="testimonial mb-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="assets/img/users/jeny-doe.svg" alt="jeny doe">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Jeny Doe</h5>
+                      <p class="job">UX Engineer</p>
+                      <p class="card-text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
                     </div>
                   </div>
                 </li>
-                <li class="testimonial">
-                  <div class="card mb-3">
-                    <div class="row no-gutters">
-                      <div class="col-md-4">
-                        <img src="assets/img/users/william.svg" class="card-img" alt="william">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">William</h5>
-                          <p class="job">Web Designer</p>
-                          <p class="card-text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
-                        </div>
-                      </div>
+                <li class="testimonial mb-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="assets/img/users/william.svg" alt="william">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">William</h5>
+                      <p class="job">Web Designer</p>
+                      <p class="card-text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="slider-action">
+              <div class="slider-action d-flex justify-content-between">
                 <ol class="slider-indicators">
                   <li class="active"></li>
                   <li></li>
@@ -239,13 +229,13 @@
       <!-- Banner -->
       <section class="banner">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
               <h2>Try for free!</h2>
               <p>Get limited 1 week free try our features!</p>
             </div>
-            <div class="col-md-6">
-              <a class="btn btn-primary" href="#">Learn more</a>
+            <div class="col-lg-6 justify-content-end text-lg-right">
+              <a class="btn btn-primary mr-lg-4" href="#">Learn more</a>
               <a class="btn btn-secondary" href="#">
                 Request Demo
                 <img src="assets/img/icons/arrow_right.svg" alt="arrow right">
@@ -259,58 +249,67 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container text-center text-lg-left">
         <div class="row">
-          <div class="col-md-5">
-            <img src="assets/img/logo-footer.svg" alt="logo">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <img class="logo" src="assets/img/logo-footer.svg" alt="logo">
             <address>
               <p>Warehouse Society, 234 <br> Bahagia Ave Street PRBW 29281</p>
               <p class="emai">info@warehouse.project</p>
               <p class="phone">1-232-3434 (Main)</p>
             </address>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2 mb-4 mb-lg-0">
             <h5>About</h5>
-            <ul class="nav">
+            <ul class="nav d-block">
               <li class="nav-item">
                 <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">DW News</a>
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2 mb-4 mb-lg-0">
             <h5>Help</h5>
-            <ul class="nav">
+            <ul class="nav d-block">
               <li class="nav-item">
                 <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Sign up</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Guide</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Reports</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Q&A</a>
+              </li>
               </li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 mb-4 mb-lg-0">
             <h5>Social Media</h5>
-            <ul class="social-media">
-              <li>
-                <a href="#">
-                  <img src="assets/img/icons/facebook.svg" alt="facebook">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/img/icons/twitter.svg" alt="twitter">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/img/icons/instagram.svg" alt="instagram">
-                </a>
-              </li>
-            </ul>
+            <div class="social-media">
+              <a href="#">
+                <img src="assets/img/icons/facebook.svg" alt="facebook">
+              </a>
+              <a href="#">
+                <img src="assets/img/icons/twitter.svg" alt="twitter">
+              </a>
+              <a href="#">
+                <img src="assets/img/icons/instagram.svg" alt="instagram">
+              </a>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -333,6 +332,7 @@
     <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

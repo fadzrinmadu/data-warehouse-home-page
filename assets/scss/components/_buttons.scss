@@ -17,9 +17,10 @@
   background: $purple;
   border: none;
   color: $white;
+  transition: .4s;
 
   &:hover {
-    background: hsl(265, 68%, 65%, 90%);
+    background: hsl(265, 68%, 55%);
   }
 }
 

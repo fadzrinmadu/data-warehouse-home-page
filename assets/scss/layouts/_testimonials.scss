@@ -1,0 +1,82 @@
+.testimonials {
+  margin-top: 150px;
+
+  .container {
+    background: $purple;
+    border-radius: 50px;
+    padding: 80px 40px 60px;
+  }
+
+  h2 {
+    color: $white;
+  }
+
+  .slider {
+    margin: 88px auto 60px;
+  }
+
+  .testimonial {
+    box-shadow: 0 20px 0 hsla(265, 68%, 65%, 30%);
+
+    .card {
+      border-radius: 20px;
+      padding: 40px 15px 30px;
+    }
+
+    .card-img img {
+      width: 90px;
+      margin: auto;
+    }
+
+    .card-title {
+      margin-bottom: 4px;
+    }
+
+    .job {
+      margin-top: 0;
+    }
+
+    .card-text {
+      color: $majestic-blue;
+      line-height: 180%;
+    }
+  }
+
+  .slider-indicators {
+    display: flex;
+    align-items: center;
+
+    li {
+      width: 5px;
+      height: 5px;
+      background: $white;
+      margin-right: 10px;
+      border-radius: 50%;
+
+      &.active {
+        width: 10px;
+        height: 10px;
+        background: $pink;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      padding: 108px 60px 92px;
+    }
+
+    .testimonial {
+      .card {
+        width: 645px;
+        padding: 60px 70px 50px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .card-img {
+        width: auto;
+      }
+    }
+  }
+}
