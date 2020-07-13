@@ -9,6 +9,6 @@
     Special thanks for <a href="https://dribbble.com/slabdsgn">SLAB Design Studio</a>
     <br />
     <br />
-    <a href="https://fadzrinmadu.github.io/data-warehouse-home-page/">View Demo</a>
+    <a href="https://fadzrinmadu.github.io/data-warehouse-home-page/" target="_blank">View Demo</a>
   </p>
 </p>
