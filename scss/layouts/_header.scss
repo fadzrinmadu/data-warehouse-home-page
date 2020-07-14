@@ -3,10 +3,8 @@
   .btn-secondary {
     margin-top: 28px;
   }
-}
 
-@media screen and (min-width: 992px) {
-  .header {
+  @include media-lg {
     margin-top: 50px;
 
     .navbar-nav {

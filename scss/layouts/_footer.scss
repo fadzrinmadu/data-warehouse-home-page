@@ -14,6 +14,7 @@
 
   .social-media {
     display: flex;
+    justify-content: center;
 
     a {
       display: inline-block;
@@ -24,7 +25,7 @@
       text-align: center;
       border-radius: 50%;
       margin-right: 14px;
-      transition: .4s;
+      @include transition-ease;
 
       &:hover {
         background: $pink;
@@ -33,28 +34,24 @@
   }
 
   .copyright {
+    display: block;
+    margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  @media screen and (min-width: 992px) {
-    a.nav-link {
-      padding-left: 0;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    h5 {
-      margin-bottom: 20px;
-    }
-
+  @include media-lg {
     .social-media {
-      justify-content: center;
+      justify-content: start;
     }
 
     .copyright {
       display: block;
-      margin-top: 40px;
+      margin-top: 0;
+    }
+
+    a.nav-link {
+      padding-left: 0;
     }
   }
 }

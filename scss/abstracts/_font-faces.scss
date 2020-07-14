@@ -1,0 +1,43 @@
+/* Avenir font-face */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff'),
+       url('../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/AvenirLTStd-Roman_1.woff'),
+       url('../fonts/avenir/AvenirLTStd-Roman_1.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff'),
+       url('../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff'),
+       url('../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff2');
+  font-weight: 700;
+}
+
+/* Helvetica font-face */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica/helvetica-webfont.woff'),
+       url('../fonts/helvetica/helvetica-webfont.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica/helvetica-bold-webfont.woff'),
+       url('../fonts/helvetica/helvetica-bold-webfont.woff2');
+  font-weight: 700;
+}

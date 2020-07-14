@@ -14,7 +14,7 @@
     padding-bottom: 30px;
   }
 
-  @media screen and (min-width: 992px) {
+  @include media-lg {
     .title p {
       width: 584px;
       margin: 50px auto;

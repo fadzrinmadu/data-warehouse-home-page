@@ -42,6 +42,10 @@
     }
   }
 
+  .slider-dot {
+    cursor: pointer;
+  }
+
   .slider-indicators {
     display: flex;
     align-items: center;
@@ -60,8 +64,12 @@
       }
     }
   }
+
+  .slider-control-prev img {
+    transform: rotateZ(180deg);
+  }
   
-  @media screen and (min-width: 992px) {
+  @include media-lg {
     .container {
       padding: 108px 60px 92px;
     }

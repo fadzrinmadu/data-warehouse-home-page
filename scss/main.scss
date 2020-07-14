@@ -1,6 +1,9 @@
 // 1. Configuration and helpers
 @import
-  'abstracts/variables';
+  'abstracts/variables',
+  'abstracts/mixins',
+  'abstracts/font-faces',
+  'abstracts/animations';
 
 // 2. Vendors
 @import

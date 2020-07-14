@@ -4,17 +4,32 @@
   right: 20px;
   z-index: 10;
 
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background: hsl(240, 13%, 92%);
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border: 1px solid $purple;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
     border-radius: 50%;
+    animation: wave 1.5s infinite linear;
   }
 
-  @media screen and (min-width: 992px) {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(240, 13%, 92%);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 8px 24px hsla(265, 68%, 65%, 15%);
+  }
+
+  @include media-lg {
     bottom: 40px;
     right: 40px;
   }

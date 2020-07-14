@@ -1,5 +1,42 @@
+/* Avenir font-face */
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/avenir/AvenirLTStd-Roman_1.woff"), url("../fonts/avenir/AvenirLTStd-Roman_1.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff2");
+  font-weight: 700;
+}
+/* Helvetica font-face */
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica/helvetica-webfont.woff"), url("../fonts/helvetica/helvetica-webfont.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica/helvetica-bold-webfont.woff"), url("../fonts/helvetica/helvetica-bold-webfont.woff2");
+  font-weight: 700;
+}
+@keyframes wave {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 body {
-  background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
   background-image: linear-gradient(to bottom, #f7fafd 0%, white 19.4%);
 }
 
@@ -21,47 +58,44 @@ body {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  text-align: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   body {
-    text-align: center;
+    text-align: left;
   }
-}
-
-h1 {
-  font-size: 5em;
-}
-
-h2 {
-  font-size: 2.5em;
 }
 
 h1,
 h2 {
-  color: #212354;
+  color: #212353;
   font-family: "Helvetica", sans-serif;
   font-weight: 700;
+  font-size: 2.625em;
 }
-@media screen and (max-width: 992px) {
-  h1,
-h2 {
-    font-size: 2.625em;
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
   }
 }
-
 h3 {
   font-family: "Helvetica", sans-serif;
-  font-weight: 400;
   font-size: 1.5em;
-}
-
-h5 {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h5,
 p {
   font-size: 1.125em;
+}
+
+h5 {
+  font-weight: 700;
 }
 
 p {
@@ -70,7 +104,7 @@ p {
 }
 
 .nav-item.active .nav-link {
-  color: #212354;
+  color: #212353;
 }
 
 .btn-secondary {
@@ -105,43 +139,10 @@ p {
   font-size: 0.75em;
 }
 
-/* Avenir font-face */
-@font-face {
-  font-family: "Avenir";
-  src: url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../fonts/avenir/AvenirLTStd-Roman_1.woff"), url("../fonts/avenir/AvenirLTStd-Roman_1.woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff2");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff2");
-  font-weight: 700;
-}
-/* Helvetica font-face */
-@font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/helvetica/helvetica-webfont.woff"), url("../fonts/helvetica/helvetica-webfont.woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/helvetica/helvetica-bold-webfont.woff"), url("../fonts/helvetica/helvetica-bold-webfont.woff2");
-  font-weight: 700;
-}
 /* Header */
 .header .btn-secondary {
   margin-top: 28px;
 }
-
 @media screen and (min-width: 992px) {
   .header {
     margin-top: 50px;
@@ -156,6 +157,7 @@ p {
     margin-top: 0;
   }
 }
+
 .intro {
   margin-top: 80px;
   overflow-x: hidden;
@@ -174,7 +176,6 @@ p {
   width: 100%;
   margin-top: 30px;
 }
-
 @media screen and (min-width: 992px) {
   .intro {
     margin-top: 130px;
@@ -197,14 +198,15 @@ p {
     margin-top: 0;
   }
 }
+
 .about {
   margin-top: 100px;
 }
 .about .container {
   background: rgba(239, 97, 183, 0.15);
-  padding: 30px 12px;
   border-radius: 50px;
   overflow-x: hidden;
+  padding: 30px 12px;
 }
 @media screen and (min-width: 992px) {
   .about .content {
@@ -287,6 +289,9 @@ p {
   color: #4b5d68;
   line-height: 180%;
 }
+.testimonials .slider-dot {
+  cursor: pointer;
+}
 .testimonials .slider-indicators {
   display: flex;
   align-items: center;
@@ -301,7 +306,10 @@ p {
 .testimonials .slider-indicators li.active {
   width: 10px;
   height: 10px;
-  background: #ef61b7;
+  background: #f063b8;
+}
+.testimonials .slider-control-prev img {
+  transform: rotateZ(180deg);
 }
 @media screen and (min-width: 992px) {
   .testimonials .container {
@@ -327,16 +335,20 @@ p {
 .banner h2 {
   margin-bottom: 0;
 }
+.banner .btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
 .banner .btn-primary {
-  background: #ef61b7;
+  background: #f063b8;
 }
 .banner .btn-primary:hover {
   background: #eb33a1;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .banner .btn {
-    width: 100%;
-    margin-bottom: 20px;
+    width: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -345,13 +357,14 @@ p {
   margin-bottom: 30px;
 }
 .footer .nav-link {
-  color: #212354;
+  color: #212353;
 }
 .footer .nav-link:hover {
   text-decoration: underline;
 }
 .footer .social-media {
   display: flex;
+  justify-content: center;
 }
 .footer .social-media a {
   display: inline-block;
@@ -362,54 +375,55 @@ p {
   text-align: center;
   border-radius: 50%;
   margin-right: 14px;
-  transition: 0.4s;
+  transition: all 0.4s ease-in-out;
 }
 .footer .social-media a:hover {
-  background: #ef61b7;
+  background: #f063b8;
 }
 .footer .copyright {
+  display: block;
+  margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 992px) {
+  .footer .social-media {
+    justify-content: start;
+  }
+  .footer .copyright {
+    display: block;
+    margin-top: 0;
+  }
   .footer a.nav-link {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 992px) {
-  .footer h5 {
-    margin-bottom: 20px;
-  }
-  .footer .social-media {
-    justify-content: center;
-  }
-  .footer .copyright {
-    display: block;
-    margin-top: 40px;
-  }
-}
 
 .btn {
-  padding: 0.625em 1.8125em;
   border-radius: 50px;
+  padding: 0.625em 1.8125em;
+  transition: all 0.4s ease-in-out;
 }
 @media screen and (min-width: 992px) {
   .btn {
-    padding: 1.0625em 1.8125em;
     border-radius: 50px;
+    padding: 1.0625em 1.8125em;
   }
+}
+.btn:hover img {
+  transform: translateX(5px);
 }
 
 .btn img {
-  margin-top: -4px;
   margin-left: 20px;
+  margin-top: -4px;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-primary {
   background: #9c69e2;
   border: none;
   color: white;
-  transition: 0.4s;
 }
 .btn-primary:hover {
   background: #7f3eda;
@@ -419,12 +433,10 @@ p {
   background: white;
   border: none;
   box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
-  transition: 0.4s;
 }
 .btn-secondary:hover {
   background: white;
-  box-shadow: none;
-  color: #212354;
+  color: #212353;
 }
 
 .messenger {
@@ -433,14 +445,28 @@ p {
   right: 20px;
   z-index: 10;
 }
+.messenger::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  border: 1px solid #9c69e2;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation: wave 1.5s infinite linear;
+}
 .messenger a {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  justify-content: center;
   background: #e8e8ed;
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 8px 24px rgba(156, 105, 226, 0.15);
 }
 @media screen and (min-width: 992px) {
   .messenger {
