@@ -289,21 +289,20 @@ p {
   color: #4b5d68;
   line-height: 180%;
 }
-.testimonials .slider-dot {
-  cursor: pointer;
-}
 .testimonials .slider-indicators {
   display: flex;
   align-items: center;
 }
-.testimonials .slider-indicators li {
+.testimonials .slider-indicators .slider-dot {
   width: 5px;
   height: 5px;
   background: white;
   margin-right: 10px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
-.testimonials .slider-indicators li.active {
+.testimonials .slider-indicators .slider-dot.active {
   width: 10px;
   height: 10px;
   background: #f063b8;

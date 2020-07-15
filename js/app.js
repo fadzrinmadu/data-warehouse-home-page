@@ -5,6 +5,7 @@ $(document).ready(function() {
     loop: true,
     margin: 20,
     nav: true,
+    dots: false,
     responsive: {
       0: {
         items: 1
@@ -26,7 +27,7 @@ $(document).ready(function() {
     owl.trigger('prev.owl.carousel');
   });
 
-  $('.slider-dot').click(function () {
+  $('.slider-dot').click(function (e) {
     owl.trigger('to.owl.carousel', [$(this).index(), 300]);
   });
 });

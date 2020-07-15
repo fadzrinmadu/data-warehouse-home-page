@@ -42,20 +42,18 @@
     }
   }
 
-  .slider-dot {
-    cursor: pointer;
-  }
-
   .slider-indicators {
     display: flex;
     align-items: center;
 
-    li {
+    .slider-dot {
       width: 5px;
       height: 5px;
       background: $white;
       margin-right: 10px;
       border-radius: 50%;
+      cursor: pointer;
+      @include transition-ease;
 
       &.active {
         width: 10px;
