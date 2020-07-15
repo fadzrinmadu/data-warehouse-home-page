@@ -265,62 +265,64 @@ p {
 .testimonials h2 {
   color: white;
 }
-.testimonials .slider {
+.testimonials .owl-carousel {
   margin: 88px auto 60px;
 }
-.testimonials .testimonial {
+.testimonials .owl-stage-outer {
+  margin-bottom: 60px;
+}
+.testimonials .owl-item {
   box-shadow: 0 20px 0 rgba(156, 105, 226, 0.3);
 }
-.testimonials .testimonial .card {
+.testimonials .card {
   border-radius: 20px;
   padding: 40px 15px 30px;
 }
-.testimonials .testimonial .card-img img {
+.testimonials .card-img img {
   width: 90px;
   margin: auto;
 }
-.testimonials .testimonial .card-title {
+.testimonials .card-title {
   margin-bottom: 4px;
 }
-.testimonials .testimonial .job {
+.testimonials .job {
   margin-top: 0;
 }
-.testimonials .testimonial .card-text {
+.testimonials .card-text {
   color: #4b5d68;
   line-height: 180%;
 }
-.testimonials .slider-indicators {
+.testimonials .owl-dots {
   display: flex;
   align-items: center;
 }
-.testimonials .slider-indicators .slider-dot {
+.testimonials .owl-dots .owl-dot {
+  background: white;
+  border-radius: 50%;
+  margin: 8px 10px;
   width: 5px;
   height: 5px;
-  background: white;
-  margin-right: 10px;
-  border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.testimonials .slider-indicators .slider-dot.active {
-  width: 10px;
-  height: 10px;
+.testimonials .owl-dots .owl-dot.active {
   background: #f063b8;
+  transform: scale(2);
 }
-.testimonials .slider-control-prev img {
+.testimonials .owl-prev img {
   transform: rotateZ(180deg);
 }
 @media screen and (min-width: 992px) {
   .testimonials .container {
     padding: 108px 60px 92px;
   }
-  .testimonials .testimonial .card {
+  .testimonials .card {
     width: 645px;
     padding: 60px 70px 50px;
     display: flex;
     flex-direction: row;
   }
-  .testimonials .testimonial .card-img {
+  .testimonials .card-img {
     width: auto;
   }
 }

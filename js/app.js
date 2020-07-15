@@ -4,8 +4,6 @@ $(document).ready(function() {
   owl.owlCarousel({
     loop: true,
     margin: 20,
-    nav: true,
-    dots: false,
     responsive: {
       0: {
         items: 1
@@ -17,17 +15,14 @@ $(document).ready(function() {
     }
   });
 
-  $('.slider-control-next').click(function(e) {
-    e.preventDefault();
-    owl.trigger('next.owl.carousel');
-  });
-
-  $('.slider-control-prev').click(function(e) {
+  $('.owl-prev').click(function(e) {
     e.preventDefault();
     owl.trigger('prev.owl.carousel');
   });
 
-  $('.slider-dot').click(function (e) {
-    owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+  $('.owl-next').click(function(e) {
+    e.preventDefault();
+    owl.trigger('next.owl.carousel');
   });
+
 });

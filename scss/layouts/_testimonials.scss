@@ -11,59 +11,62 @@
     color: $white;
   }
 
-  .slider {
+  .owl-carousel {
     margin: 88px auto 60px;
   }
 
-  .testimonial {
-    box-shadow: 0 20px 0 hsla(265, 68%, 65%, 30%);
-
-    .card {
-      border-radius: 20px;
-      padding: 40px 15px 30px;
-    }
-
-    .card-img img {
-      width: 90px;
-      margin: auto;
-    }
-
-    .card-title {
-      margin-bottom: 4px;
-    }
-
-    .job {
-      margin-top: 0;
-    }
-
-    .card-text {
-      color: $majestic-blue;
-      line-height: 180%;
-    }
+  .owl-stage-outer {
+    margin-bottom: 60px;
   }
 
-  .slider-indicators {
+  .owl-item {
+    box-shadow: 0 20px 0 hsla(265, 68%, 65%, 30%);
+  }
+
+  .card {
+    border-radius: 20px;
+    padding: 40px 15px 30px;
+  }
+
+  .card-img img {
+    width: 90px;
+    margin: auto;
+  }
+
+  .card-title {
+    margin-bottom: 4px;
+  }
+
+  .job {
+    margin-top: 0;
+  }
+
+  .card-text {
+    color: $majestic-blue;
+    line-height: 180%;
+  }
+
+  .owl-dots {
     display: flex;
     align-items: center;
 
-    .slider-dot {
+    .owl-dot {
+      background: $white;
+      border-radius: 50%;
+      margin: 8px 10px;
       width: 5px;
       height: 5px;
-      background: $white;
-      margin-right: 10px;
-      border-radius: 50%;
       cursor: pointer;
       @include transition-ease;
 
       &.active {
-        width: 10px;
-        height: 10px;
         background: $pink;
+        transform: scale(2);
       }
     }
   }
 
-  .slider-control-prev img {
+  .owl-prev img {
     transform: rotateZ(180deg);
   }
   
@@ -72,17 +75,15 @@
       padding: 108px 60px 92px;
     }
 
-    .testimonial {
-      .card {
-        width: 645px;
-        padding: 60px 70px 50px;
-        display: flex;
-        flex-direction: row;
-      }
+    .card {
+      width: 645px;
+      padding: 60px 70px 50px;
+      display: flex;
+      flex-direction: row;
+    }
 
-      .card-img {
-        width: auto;
-      }
+    .card-img {
+      width: auto;
     }
   }
 }
