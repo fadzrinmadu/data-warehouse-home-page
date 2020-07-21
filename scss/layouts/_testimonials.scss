@@ -5,32 +5,37 @@
     background: $purple;
     border-radius: 50px;
     padding: 80px 40px 60px;
+
+    @include media-lg {
+      padding: 108px 60px 92px;
+    }
   }
 
   h2 {
     color: $white;
   }
 
-  .owl-carousel {
-    margin: 88px auto 60px;
-  }
-
-  .owl-stage-outer {
-    margin-bottom: 60px;
-  }
-
-  .owl-item {
-    box-shadow: 0 20px 0 hsla(265, 68%, 65%, 30%);
-  }
-
   .card {
     border-radius: 20px;
     padding: 40px 15px 30px;
+
+    @include media-lg {
+      display: flex;
+      flex-direction: row;
+      padding: 60px 70px 50px;
+      width: 645px;
+    }
+  }
+
+  .card-img {
+    @include media-lg {
+      width: auto;
+    }
   }
 
   .card-img img {
-    width: 90px;
     margin: auto;
+    width: 90px;
   }
 
   .card-title {
@@ -44,46 +49,5 @@
   .card-text {
     color: $majestic-blue;
     line-height: 180%;
-  }
-
-  .owl-dots {
-    display: flex;
-    align-items: center;
-
-    .owl-dot {
-      background: $white;
-      border-radius: 50%;
-      margin: 8px 10px;
-      width: 5px;
-      height: 5px;
-      cursor: pointer;
-      @include transition-ease;
-
-      &.active {
-        background: $pink;
-        transform: scale(2);
-      }
-    }
-  }
-
-  .owl-prev img {
-    transform: rotateZ(180deg);
-  }
-  
-  @include media-lg {
-    .container {
-      padding: 108px 60px 92px;
-    }
-
-    .card {
-      width: 645px;
-      padding: 60px 70px 50px;
-      display: flex;
-      flex-direction: row;
-    }
-
-    .card-img {
-      width: auto;
-    }
   }
 }

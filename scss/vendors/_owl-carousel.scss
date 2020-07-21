@@ -1,0 +1,35 @@
+.owl-carousel {
+  margin: 88px auto 60px;
+
+  .owl-stage-outer {
+    margin-bottom: 60px;
+  }
+
+  .owl-item {
+    box-shadow: 0 20px 0 hsla(265, 68%, 65%, 30%);
+  }
+
+  .owl-dots {
+    align-items: center;
+    display: flex;
+  }
+
+  .owl-dots .owl-dot {
+    @include transition-ease;
+    background: $white;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 5px;
+    margin: 8px 10px;
+    width: 5px;
+  }
+
+  .owl-dots .owl-dot.active {
+    background: $pink;
+    transform: scale(2);
+  }
+
+  .owl-prev img {
+    transform: rotateZ(180deg);
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "data-warehouse-home-page",
+  "version": "1.0.0",
+  "description": "This is a website that converts design files from SLAB Design Studio into HTML & CSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadzrinmadu/data-warehouse-home-page.git"
+  },
+  "keywords": [],
+  "author": "Muhammad Fadzrin Madu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fadzrinmadu/data-warehouse-home-page/issues"
+  },
+  "homepage": "https://github.com/fadzrinmadu/data-warehouse-home-page#readme",
+  "devDependencies": {
+    "stylelint": "^13.6.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-sass-guidelines": "^7.0.0"
+  },
+  "dependencies": {}
+}

@@ -14,8 +14,8 @@ h1,
 h2 {
   color: $majestic-blue-dark;
   font-family: $secondary-font;
-  font-weight: 700;
   font-size: 2.625em;
+  font-weight: 700;
 }
 
 @include media-lg {
@@ -62,8 +62,8 @@ p {
 }
 
 .feature p {
-  font-size: 1em;
   color: $majestic-blue;
+  font-size: 1em;
 }
 
 .testimonial .job {

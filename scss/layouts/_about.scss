@@ -1,16 +1,16 @@
 .about {
   margin-top: 100px;
 
+  @include media-lg {
+    .content {
+      padding-right: 90px;
+    }
+  }
+
   .container {
     background: hsla(324, 82%, 66%, 15%);
     border-radius: 50px;
     overflow-x: hidden;
     padding: 30px 12px;
-  }
-
-  @include media-lg {
-    .content {
-      padding-right: 90px;
-    }
   }
 }

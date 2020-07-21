@@ -1,29 +1,28 @@
 .banner {
-  margin-top: 150px;
   border-top: 2px solid hsl(256, 67%, 93%);
-  padding-top: 100px;
+  margin-top: 150px;
   padding-bottom: 100px;
+  padding-top: 100px;
 
   h2 {
     margin-bottom: 0;
   }
 
   .btn {
-    width: 100%;
     margin-bottom: 20px;
+    width: 100%;
+
+    @include media-lg {
+      margin-bottom: 0;
+      width: auto;
+    }
   }
 
   .btn-primary {
     background: $pink;
-    &:hover {
-      background: hsl(324, 82%, 56%);
-    }
   }
 
-  @include media-lg {
-    .btn {
-      width: auto;
-      margin-bottom: 0;
-    }
+  .btn-primary:hover {
+    background: hsl(324, 82%, 56%);
   }
 }

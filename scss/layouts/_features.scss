@@ -3,6 +3,11 @@
 
   .title p {
     margin-top: 30px;
+
+    @include media-lg {
+      margin: 50px auto;
+      width: 584px;
+    }
   }
 
   .row:nth-child(2) {
@@ -10,39 +15,34 @@
   }
 
   .feature {
-    padding-top: 50px;
     padding-bottom: 30px;
-  }
+    padding-top: 50px;
 
-  @include media-lg {
-    .title p {
-      width: 584px;
-      margin: 50px auto;
-    }
-
-    .feature {
-      background-repeat: no-repeat;
+    @include media-lg {
       background-position: center right;
+      background-repeat: no-repeat;
       background-size: contain;
 
       &:nth-child(1) {
-        background-image: url(../img/bg-search-data.svg);
+        background-image: url('../img/bg-search-data.svg');
       }
 
       &:nth-child(2) {
-        background-image: url(../img/bg-24-hours-access.svg);
+        background-image: url('../img/bg-24-hours-access.svg');
       }
 
       &:nth-child(3) {
-        background-image: url(../img/bg-print-out.svg);
+        background-image: url('../img/bg-print-out.svg');
       }
 
       &:nth-child(4) {
-        background-image: url(../img/bg-security-code.svg);
+        background-image: url('../img/bg-security-code.svg');
       }
     }
+  }
 
-    .btn {
+  .btn {
+    @include media-lg {
       padding-left: 0;
     }
   }

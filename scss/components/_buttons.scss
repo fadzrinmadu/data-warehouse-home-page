@@ -1,43 +1,43 @@
 .btn {
+  @include transition-ease;
   border-radius: 50px;
   padding: 0.625em 1.8125em;
-  @include transition-ease;
 
   @include media-lg {
     border-radius: 50px;
     padding: 1.0625em 1.8125em;
   }
 
-  &:hover {
-    img {
-      transform: translateX(5px);
-    }
+  img {
+    @include transition-ease;
+    margin-left: 20px;
+    margin-top: -4px;
   }
 }
 
-.btn img {
-  margin-left: 20px;
-  margin-top: -4px;
-  @include transition-ease;
+.btn:hover {
+  img {
+    transform: translateX(5px);
+  }
 }
 
 .btn-primary {
   background: $purple;
-  border: none;
+  border: 0;
   color: $white;
+}
 
-  &:hover {
-    background: hsl(265, 68%, 55%);
-  }
+.btn-primary:hover {
+  background: hsl(265, 68%, 55%);
 }
 
 .btn-secondary {
   background: $white;
-  border: none;
+  border: 0;
   box-shadow: 0 5px 5px hsla(202, 16, 35, 10%);
+}
 
-  &:hover {
-    background: $white;
-    color: $majestic-blue-dark;
-  }
+.btn-secondary:hover {
+  background: $white;
+  color: $majestic-blue-dark;
 }

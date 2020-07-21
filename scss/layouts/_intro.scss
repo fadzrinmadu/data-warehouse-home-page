@@ -1,13 +1,35 @@
 .intro {
   margin-top: 80px;
   overflow-x: hidden;
+
+  @include media-lg {
+    margin-top: 130px;
+    overflow-x: hidden;
+  }
   
   h1 {
     margin-top: 20px;
+
+    @include media-lg {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    @include media-lg {
+      margin: 50px auto;
+      padding-right: 40%;
+    }
   }
 
   img {
     width: 100%;
+
+    @include media-lg {
+      margin-left: -344px;
+      margin-top: 96px;
+      width: auto;
+    }
   }
 
   .intro-content {
@@ -16,32 +38,12 @@
   }
 
   .btn-primary {
-    width: 100%;
     margin-top: 30px;
-  }
+    width: 100%;
 
-  @include media-lg {
-    margin-top: 130px;
-    overflow-x: hidden;
-    
-    h1 {
+    @include media-lg {
       margin-top: 0;
-    }
-
-    p {
-      padding-right: 40%;
-      margin: 50px auto;
-    }
-
-    img {
-      width: auto;
-      margin-top: 96px; 
-      margin-left: -344px;
-    }
-
-    .btn-primary {
       width: 170px;
-      margin-top: 0;
     }
   }
 }

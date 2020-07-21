@@ -1,21 +1,28 @@
-/* Header */
 .header {
-  .btn-secondary {
-    margin-top: 28px;
-  }
+  margin-top: 50px;
 
-  @include media-lg {
-    margin-top: 50px;
-
-    .navbar-nav {
+  .navbar-nav {
+    @include media-lg {
       margin-left: 121px;
     }
+  }
 
-    .nav-item {
+  .nav-item {
+    @include media-lg {
       margin-right: 40px;
     }
+  }
 
-    .btn-secondary {
+  .btn-secondary {
+    @include media-lg {
+      margin-top: 0;
+    }
+  }
+
+  .btn-secondary {
+    margin-top: 28px;
+
+    @include media-lg {
       margin-top: 0;
     }
   }
