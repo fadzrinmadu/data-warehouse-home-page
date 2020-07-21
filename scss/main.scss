@@ -1,31 +1,26 @@
 // 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/mixins',
-  'abstracts/font-faces',
-  'abstracts/animations';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/font-faces';
+@import 'abstracts/animations';
 
 // 2. Vendors
-@import
-  'vendors/bootstrap-overrides';
+@import 'vendors/bootstrap-overrides';
 
 // 3. Base stuff
-@import 
-  'base/base',
-  'base/typography';
+@import 'base/base';
+@import 'base/typography';
 
 // 4. Layout-related sections
-@import
-  'layouts/header',
-  'layouts/intro',
-  'layouts/about',
-  'layouts/features',
-  'layouts/testimonials',
-  'layouts/banner',
-  'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/intro';
+@import 'layouts/about';
+@import 'layouts/features';
+@import 'layouts/testimonials';
+@import 'layouts/banner';
+@import 'layouts/footer';
 
 // 5. Components
-@import
-  'components/buttons',
-  'components/messenger';
+@import 'components/buttons';
+@import 'components/messenger';
 
