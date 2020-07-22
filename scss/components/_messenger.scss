@@ -4,7 +4,7 @@
   right: 20px;
   z-index: 10;
 
-  @include media-lg {
+  @include breakpoint(desktop) {
     bottom: 40px;
     right: 40px;
   }
@@ -22,15 +22,13 @@
 }
 
 .messenger::after {
+  @include abs-position(0, auto, auto, 0);
   animation: wave 1.5s infinite linear;
   border: 1px solid $purple;
   border-radius: 50%;
   box-sizing: border-box;
   content: '';
   height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
   z-index: -1;
 }

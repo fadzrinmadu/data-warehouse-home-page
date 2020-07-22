@@ -6,7 +6,7 @@
     border-radius: 50px;
     padding: 80px 40px 60px;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       padding: 108px 60px 92px;
     }
   }
@@ -19,7 +19,7 @@
     border-radius: 20px;
     padding: 40px 15px 30px;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       display: flex;
       flex-direction: row;
       padding: 60px 70px 50px;
@@ -28,7 +28,7 @@
   }
 
   .card-img {
-    @include media-lg {
+    @include breakpoint(desktop) {
       width: auto;
     }
   }

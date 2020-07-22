@@ -3,7 +3,7 @@
   border-radius: 50px;
   padding: 0.625em 1.8125em;
 
-  @include media-lg {
+  @include breakpoint(desktop) {
     border-radius: 50px;
     padding: 1.0625em 1.8125em;
   }

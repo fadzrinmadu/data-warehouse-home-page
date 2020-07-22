@@ -1,35 +1,3 @@
-/* Avenir font-face */
-@font-face {
-  font-family: "Avenir";
-  font-weight: 400;
-  src: url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff2");
-}
-@font-face {
-  font-family: "Avenir";
-  font-weight: 500;
-  src: url("../fonts/avenir/AvenirLTStd-Roman_1.woff"), url("../fonts/avenir/AvenirLTStd-Roman_1.woff2");
-}
-@font-face {
-  font-family: "Avenir";
-  font-weight: 600;
-  src: url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff2");
-}
-@font-face {
-  font-family: "Avenir";
-  font-weight: 700;
-  src: url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff2");
-}
-/* Helvetica font-face */
-@font-face {
-  font-family: "Helvetica";
-  font-weight: 400;
-  src: url("../fonts/helvetica/helvetica-webfont.woff"), url("../fonts/helvetica/helvetica-webfont.woff2");
-}
-@font-face {
-  font-family: "Helvetica";
-  font-weight: 700;
-  src: url("../fonts/helvetica/helvetica-bold-webfont.woff"), url("../fonts/helvetica/helvetica-bold-webfont.woff2");
-}
 @keyframes wave {
   to {
     opacity: 0;
@@ -51,7 +19,7 @@
 }
 .owl-carousel .owl-dots .owl-dot {
   transition: all 0.4s ease-in-out;
-  background: white;
+  background: #fff;
   border-radius: 50%;
   cursor: pointer;
   height: 5px;
@@ -83,6 +51,36 @@ li {
   list-style-type: none;
 }
 
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  src: url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff2");
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 500;
+  src: url("../fonts/avenir/AvenirLTStd-Roman_1.woff"), url("../fonts/avenir/AvenirLTStd-Roman_1.woff2");
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 600;
+  src: url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff2");
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 700;
+  src: url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff2");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 400;
+  src: url("../fonts/avenir/helvetica-webfont.woff"), url("../fonts/avenir/helvetica-webfont.woff2");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 700;
+  src: url("../fonts/avenir/helvetica-bold-webfont.woff"), url("../fonts/avenir/helvetica-bold-webfont.woff2");
+}
 body {
   color: #4b5d68;
   font-family: "Avenir", sans-serif;
@@ -318,7 +316,7 @@ p {
   }
 }
 .testimonials h2 {
-  color: white;
+  color: #fff;
 }
 .testimonials .card {
   border-radius: 20px;
@@ -453,7 +451,7 @@ p {
 .btn-primary {
   background: #9c69e2;
   border: 0;
-  color: white;
+  color: #fff;
 }
 
 .btn-primary:hover {
@@ -461,13 +459,13 @@ p {
 }
 
 .btn-secondary {
-  background: white;
+  background: #fff;
   border: 0;
   box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
 }
 
 .btn-secondary:hover {
-  background: white;
+  background: #fff;
   color: #212353;
 }
 
@@ -495,15 +493,17 @@ p {
 }
 
 .messenger::after {
+  bottom: auto;
+  left: 0;
+  position: absolute;
+  right: auto;
+  top: 0;
   animation: wave 1.5s infinite linear;
   border: 1px solid #9c69e2;
   border-radius: 50%;
   box-sizing: border-box;
   content: "";
   height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
   z-index: -1;
 }

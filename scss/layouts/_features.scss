@@ -4,7 +4,7 @@
   .title p {
     margin-top: 30px;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin: 50px auto;
       width: 584px;
     }
@@ -18,7 +18,7 @@
     padding-bottom: 30px;
     padding-top: 50px;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       background-position: center right;
       background-repeat: no-repeat;
       background-size: contain;
@@ -42,7 +42,7 @@
   }
 
   .btn {
-    @include media-lg {
+    @include breakpoint(desktop) {
       padding-left: 0;
     }
   }

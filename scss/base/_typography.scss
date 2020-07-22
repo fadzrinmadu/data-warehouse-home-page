@@ -1,3 +1,13 @@
+// Avenir font face
+@include font-face('Avenir', 400, 'avenir-book-opentype_bigfontsite.com-webfont');
+@include font-face('Avenir', 500, 'AvenirLTStd-Roman_1');
+@include font-face('Avenir', 600, 'avenir-medium-opentype_bigfontsite.com-webfont');
+@include font-face('Avenir', 700, 'avenir-heavy-opentype_bigfontsite.com-webfont');
+
+// Helvetica font face
+@include font-face('Helvetica', 400, 'helvetica-webfont');
+@include font-face('Helvetica', 700, 'helvetica-bold-webfont');
+
 body {
   color: $majestic-blue;
   font-family: $primary-font;
@@ -5,7 +15,7 @@ body {
   font-weight: 600;
   text-align: center;
 
-  @include media-lg {
+  @include breakpoint(desktop) {
     text-align: left;
   }
 }
@@ -18,7 +28,7 @@ h2 {
   font-weight: 700;
 }
 
-@include media-lg {
+@include breakpoint(desktop) {
   h1 {
     font-size: 5em;
   }

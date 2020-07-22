@@ -2,19 +2,19 @@
   margin-top: 50px;
 
   .navbar-nav {
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-left: 121px;
     }
   }
 
   .nav-item {
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-right: 40px;
     }
   }
 
   .btn-secondary {
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-top: 0;
     }
   }
@@ -22,7 +22,7 @@
   .btn-secondary {
     margin-top: 28px;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-top: 0;
     }
   }

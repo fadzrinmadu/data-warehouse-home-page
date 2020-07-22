@@ -7,7 +7,7 @@
   .nav-link {
     color: $majestic-blue-dark;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       padding-left: 0;
     }
   }
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       justify-content: start;
     }
   }
@@ -47,7 +47,7 @@
     padding-bottom: 20px;
     padding-top: 20px;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       display: block;
       margin-top: 0;
     }

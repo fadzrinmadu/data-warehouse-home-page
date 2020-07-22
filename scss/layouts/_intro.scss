@@ -2,7 +2,7 @@
   margin-top: 80px;
   overflow-x: hidden;
 
-  @include media-lg {
+  @include breakpoint(desktop) {
     margin-top: 130px;
     overflow-x: hidden;
   }
@@ -10,13 +10,13 @@
   h1 {
     margin-top: 20px;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-top: 0;
     }
   }
 
   p {
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin: 50px auto;
       padding-right: 40%;
     }
@@ -25,7 +25,7 @@
   img {
     width: 100%;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-left: -344px;
       margin-top: 96px;
       width: auto;
@@ -41,7 +41,7 @@
     margin-top: 30px;
     width: 100%;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-top: 0;
       width: 170px;
     }

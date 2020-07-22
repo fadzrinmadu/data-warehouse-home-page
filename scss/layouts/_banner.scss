@@ -12,7 +12,7 @@
     margin-bottom: 20px;
     width: 100%;
 
-    @include media-lg {
+    @include breakpoint(desktop) {
       margin-bottom: 0;
       width: auto;
     }

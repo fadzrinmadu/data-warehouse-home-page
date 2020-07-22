@@ -1,15 +1,34 @@
+@mixin font-face($name, $weight, $file) {
+  @font-face {
+    font-family: $name;
+    font-weight: $weight;
+    src: 
+      url('../fonts/avenir/#{$file}.woff'),
+      url('../fonts/avenir/#{$file}.woff2');
+  }
+}
+
+@mixin abs-position($top, $right, $bottom, $left) {
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+
 @mixin transition-ease {
   transition: all 0.4s ease-in-out;
 }
 
-@mixin media-md {
-  @media screen and (min-width: 768px) {
-    @content;
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
   }
-}
-
-@mixin media-lg {
-  @media screen and (min-width: 992px) {
-    @content;
+  @else if $point == tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
   }
 }
