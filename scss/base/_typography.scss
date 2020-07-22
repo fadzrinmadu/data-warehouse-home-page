@@ -1,12 +1,12 @@
 // Avenir font face
-@include font-face('Avenir', 400, 'avenir-book-opentype_bigfontsite.com-webfont');
-@include font-face('Avenir', 500, 'AvenirLTStd-Roman_1');
-@include font-face('Avenir', 600, 'avenir-medium-opentype_bigfontsite.com-webfont');
-@include font-face('Avenir', 700, 'avenir-heavy-opentype_bigfontsite.com-webfont');
+@include font-face('Avenir', 400, 'avenir/avenir-book-opentype_bigfontsite.com-webfont');
+@include font-face('Avenir', 500, 'avenir/AvenirLTStd-Roman_1');
+@include font-face('Avenir', 600, 'avenir/avenir-medium-opentype_bigfontsite.com-webfont');
+@include font-face('Avenir', 700, 'avenir/avenir-heavy-opentype_bigfontsite.com-webfont');
 
 // Helvetica font face
-@include font-face('Helvetica', 400, 'helvetica-webfont');
-@include font-face('Helvetica', 700, 'helvetica-bold-webfont');
+@include font-face('Helvetica', 400, 'helvetica/helvetica-webfont');
+@include font-face('Helvetica', 700, 'helvetica/helvetica-bold-webfont');
 
 body {
   color: $majestic-blue;

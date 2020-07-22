@@ -52,34 +52,34 @@ li {
 }
 
 @font-face {
-  font-family: "Avenir";
+  font-family: Avenir;
   font-weight: 400;
   src: url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-book-opentype_bigfontsite.com-webfont.woff2");
 }
 @font-face {
-  font-family: "Avenir";
+  font-family: Avenir;
   font-weight: 500;
   src: url("../fonts/avenir/AvenirLTStd-Roman_1.woff"), url("../fonts/avenir/AvenirLTStd-Roman_1.woff2");
 }
 @font-face {
-  font-family: "Avenir";
+  font-family: Avenir;
   font-weight: 600;
   src: url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-medium-opentype_bigfontsite.com-webfont.woff2");
 }
 @font-face {
-  font-family: "Avenir";
+  font-family: Avenir;
   font-weight: 700;
   src: url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff"), url("../fonts/avenir/avenir-heavy-opentype_bigfontsite.com-webfont.woff2");
 }
 @font-face {
-  font-family: "Helvetica";
+  font-family: Helvetica;
   font-weight: 400;
-  src: url("../fonts/avenir/helvetica-webfont.woff"), url("../fonts/avenir/helvetica-webfont.woff2");
+  src: url("../fonts/helvetica/helvetica-webfont.woff"), url("../fonts/helvetica/helvetica-webfont.woff2");
 }
 @font-face {
-  font-family: "Helvetica";
+  font-family: Helvetica;
   font-weight: 700;
-  src: url("../fonts/avenir/helvetica-bold-webfont.woff"), url("../fonts/avenir/helvetica-bold-webfont.woff2");
+  src: url("../fonts/helvetica/helvetica-bold-webfont.woff"), url("../fonts/helvetica/helvetica-bold-webfont.woff2");
 }
 body {
   color: #4b5d68;
